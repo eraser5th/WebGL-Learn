@@ -2,7 +2,7 @@
 
 WebGL 2を勉強したので残す。
 
-基本的にはO'reilyの「初めてのWebGL 2」通りだが、TypeScript化してある。
+基本的にはO'Reillyの「初めてのWebGL 2」通りだが、TypeScript化してある。
 
 ## ビルド
 
