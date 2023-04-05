@@ -46,10 +46,10 @@ const getWebGL2Context = (canvas: HTMLCanvasElement) => {
   return gl;
 };
 
-function init() {
+const init = () => {
   const canvas = getCanvas(document);
   const gl = getWebGL2Context(canvas);
   window.onkeydown = checkKey(gl);
-}
+};
 
 window.onload = init;
