@@ -1,0 +1,26 @@
+{
+  "name": "real-time-3d-graphics-with-webgl-2",
+  "version": "1.0.0",
+  "description": "<a href=\"https://www.packtpub.com/web-development/real-time-3d-graphics-webgl-2-second-edition\"><img src=\"https://www.packtpub.com/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/b/0/b09878_new_ccover.png\" alt=\"Real-Time 3D Graphics with WebGL 2 - Second Edition\" height=\"256px\" align=\"right\"></a>",
+  "main": "index.js",
+  "scripts": {
+    "build": "./build_all.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PacktPublishing/Real-Time-3D-Graphics-with-WebGL-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PacktPublishing/Real-Time-3D-Graphics-with-WebGL-2/issues"
+  },
+  "homepage": "https://github.com/PacktPublishing/Real-Time-3D-Graphics-with-WebGL-2#readme",
+  "dependencies": {
+    "esbuild": "0.17.15",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.3"
+  }
+}
