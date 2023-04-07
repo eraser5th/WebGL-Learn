@@ -1,5 +1,5 @@
-import { getCanvas, getWebGL2Context } from "./dom";
-import { getColorClearValue, updateClearColor } from "./webgl";
+import { getCanvas, getWebGL2Context } from "../../common/ts/dom";
+import { getColorClearValue, updateClearColor } from "../../common/ts/webgl";
 
 const checkKey = (gl: WebGL2RenderingContext) => (event: KeyboardEvent) => {
   switch (event.key) {
