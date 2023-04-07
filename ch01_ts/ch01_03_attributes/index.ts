@@ -1,3 +1,4 @@
+import { getCanvas, getWebGL2Context } from "./dom";
 import { getColorClearValue, updateClearColor } from "./webgl";
 
 const checkKey = (gl: WebGL2RenderingContext) => (event: KeyboardEvent) => {
@@ -28,26 +29,8 @@ const checkKey = (gl: WebGL2RenderingContext) => (event: KeyboardEvent) => {
   }
 };
 
-const getCanvas = (document: Document) => {
-  const canvas = document.getElementById(
-    "webgl-canvas"
-  ) as HTMLCanvasElement | null;
-  if (!canvas) {
-    throw new Error("canvasの取得に失敗しました");
-  }
-  return canvas;
-};
-
-const getWebGL2Context = (canvas: HTMLCanvasElement) => {
-  const gl = canvas.getContext("webgl2");
-  if (!gl) {
-    throw new Error("webgl2コンテキストの取得に失敗しました");
-  }
-  return gl;
-};
-
 const init = () => {
-  const canvas = getCanvas(document);
+  const canvas = getCanvas(document, "webgl-canvas");
   const gl = getWebGL2Context(canvas);
   window.onkeydown = checkKey(gl);
 };
